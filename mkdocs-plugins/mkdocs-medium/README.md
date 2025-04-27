@@ -69,12 +69,40 @@ Replace this with your own Medium list or collection URL if needed.
 2. Run the script:
 
 ```bash
-python medium_scraper.py
+python medium_list.py
 ```
 
 ---
 
 ## 📄 Output Format (medium_articles.md)
+
+```md
+# Medium Articles
+
+### 1. [The Future of DevOps](https://medium.com/...)  
+*How AI is changing DevOps forever*
+
+### 2. [Policy-as-Code Demystified](https://medium.com/...)  
+*A simple intro to Open Policy Agent (OPA)*
+
+...
+```
+
+## 🏁 How to Run V2
+
+1. Start Chrome with `--remote-debugging-port=9222`
+2. Save all the URLs in a file `urls.txt` under the same folder.
+3. Run the script:
+
+```bash
+python medium_list-v2.py
+```
+
+---
+
+## 📄 Output Format (medium_articles.md)
+
+An `output` directory will be created which will contain individual files for each URL.
 
 ```md
 # Medium Articles
